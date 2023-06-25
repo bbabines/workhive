@@ -3,7 +3,7 @@ import React from "react";
 const Gig = () => {
 	return (
 		<>
-			<p>hi</p>
+			<p>Gig</p>
 		</>
 	);
 };

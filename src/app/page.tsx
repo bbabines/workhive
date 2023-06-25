@@ -1,11 +1,13 @@
 import React from "react";
 
-const Home = () => {
+import Navbar from "@/components/Navbar";
+
+const App = () => {
 	return (
 		<>
-			<p>hi</p>
+			<Navbar />
 		</>
 	);
 };
 
-export default Home;
+export default App;
