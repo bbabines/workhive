@@ -29,17 +29,27 @@ const DemoCarousel = ({ imagesToShow, imagesToPass }) => {
 
 	return (
 		<div>
-			<button onClick={handlePrev}>Previous</button>
-			<div className="">
+			<div className="w=[1400px]">
 				{/* Slide */}
-				<div className="flex gap-3">
+				<div className="flex justify-center gap-3">
+					<button
+						onClick={handlePrev}
+						className=" h-[35px] w-[75px] text-black bg-transparent border-2 border-[black] py-[5px] px-[10px] rounded-2xl text-sm relative top-[150px]"
+					>
+						Previous
+					</button>
 					{/* Container */}
 
 					{cards.map((card) => (
 						<CategoryCard item={card} key={card.id} />
 					))}
+					<button
+						onClick={handleNext}
+						className=" h-[35px] w-[75px] text-black bg-transparent border-2 border-[black] py-[5px] px-[10px] rounded-2xl text-sm relative top-[150px]"
+					>
+						Next
+					</button>
 				</div>
-				<button onClick={handleNext}>Next</button>
 			</div>
 		</div>
 	);

@@ -13,12 +13,12 @@ const CategoryCard = ({ item }: CategoryCardProps) => {
 				<img
 					src={item.img}
 					alt="A category card."
-					className="w-[100%] h-[100%] object-cover"
+					className="w-[100%] h-[100%] object-cover opacity-80"
 				/>
 				<span className="font-medium absolute top-[15px] left-[15px]">
 					{item.desc}
 				</span>
-				<span className="font-[24px] absolute left-[15px] top-[40px]">
+				<span className="text-[2em] font-bold absolute left-[15px] top-[40px]">
 					{item.title}
 				</span>
 			</div>
