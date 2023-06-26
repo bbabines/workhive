@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-	const [active, setActive] = useState(false);
+	const [active, setActive] = useState(true);
+	const [open, setOpen] = useState(false);
 
 	const isActive = () => {
 		window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -24,13 +25,12 @@ const Navbar = () => {
 		isSeller: true,
 	};
 
-	const [open, setOpen] = useState(false);
-
 	return (
 		<div
+			// Will need to add another condition for pathname !== home
 			className={`${
 				active
-					? "flex flex-col items-center bg-[coral] transition ease delay-150 sticky top-0 "
+					? "flex flex-col items-center bg-[white] transition ease delay-150 sticky top-0 "
 					: "flex flex-col items-center bg-[mediumpurple] transition ease delay-150 "
 			}`}
 		>
@@ -63,7 +63,7 @@ const Navbar = () => {
 						{!currentUser?.isSeller && <span>Become a Seller</span>}
 					</Link>
 					{!currentUser && (
-						<button className="color-white py-[10px] px-[20px] rounded border-2 border-white cursor bg-transparent hover:bg-[#bcf5a6] hover:border-2 hover:border-[#bcf5a6]">
+						<button className="color-white py-[10px] px-[20px] rounded border-2 border-white cursor bg-transparent hover:bg-[#bcf5a6] hover:border-2 hover:border-[#bcf5a6] ">
 							Join
 						</button>
 					)}
@@ -86,13 +86,26 @@ const Navbar = () => {
 									{/* Options */}
 									{currentUser?.isSeller && (
 										<>
-											<span>Gigs</span>
-											<span>Add New Gig</span>
+											<Link href="/">
+												<span>Gigs</span>
+											</Link>
+
+											<Link href="/">
+												<span>Add New Gig</span>
+											</Link>
 										</>
 									)}
-									<span>Orders</span>
-									<span>Messages</span>
-									<span>Logout</span>
+									<Link href="/">
+										<span>Orders</span>
+									</Link>
+
+									<Link href="/">
+										<span>Messages</span>
+									</Link>
+
+									<Link href="/">
+										<span>Logout</span>
+									</Link>
 								</div>
 							)}
 						</div>
@@ -102,8 +115,8 @@ const Navbar = () => {
 
 			{active && (
 				<>
-					<hr className="w-[100%] h-[0px] border-1 border-slate-300" />
-					<div className="w-[1400px] py-[10px] px-[0px] flex justify-between font-light text-slate-300">
+					<hr className="w-[100%] h-[0px] border-1 border-slate-600" />
+					<div className="w-[1400px] py-[10px] px-[0px] flex justify-between font-light text-slate-600">
 						<span>Test 1</span>
 						<span>Test 2</span>
 						<span>Test 2</span>
