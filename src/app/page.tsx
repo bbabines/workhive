@@ -3,9 +3,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Featured from "@/components/Featured";
 import TrustedBy from "@/components/TrustedBy";
-import InfiniteCarousel from "@/components/InfiniteCarousel";
 
-import { cards } from "@/data";
+import DemoCarousel from "@/components/DemoCarousel";
 
 const App = () => {
 	return (
@@ -13,7 +12,7 @@ const App = () => {
 			<Navbar />
 			<Featured />
 			<TrustedBy />
-			<InfiniteCarousel items={cards} />
+			<DemoCarousel imagesToPass={1} imagesToShow={1} />
 		</>
 	);
 };
