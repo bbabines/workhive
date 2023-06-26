@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-	const [active, setActive] = useState(true);
+	const [active, setActive] = useState(false);
 	const [open, setOpen] = useState(false);
 
 	const isActive = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
 
 	return (
 		<div
-			// Will need to add another condition for pathname !== home
+			// Will need to add another condition for pathname !== home so the screen is changed on different pages.
 			className={`${
 				active
 					? "flex flex-col items-center bg-[white] transition ease delay-150 sticky top-0 "
