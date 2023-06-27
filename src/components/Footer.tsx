@@ -3,14 +3,9 @@ import React from "react";
 const Footer = () => {
 	return (
 		<div className="flex justify-center text-[#7476a7] my-[50px] mx-[0px]">
-			{/* Footer */}
 			<div className="">
-				{/* Container */}
 				<div className="w-[1400px] flex justify-between">
-					{/* Top */}
-
 					<div className="flex flex-col gap-5">
-						{/* Item */}
 						<h5 className="font-bold text-[#555]">Categories</h5>
 						<span className="font-medium">Graphics & Design</span>
 						<span className="font-medium">Digital Marketing</span>
@@ -26,7 +21,6 @@ const Footer = () => {
 					</div>
 
 					<div className="flex flex-col gap-5">
-						{/* Item */}
 						<h5 className="font-bold text-[#555]">About</h5>
 						<span className="font-medium">Press & News</span>
 						<span className="font-medium">Partnerships</span>
@@ -38,7 +32,6 @@ const Footer = () => {
 					</div>
 
 					<div className="flex flex-col gap-5">
-						{/* Item */}
 						<h5 className="font-bold text-[#555]">Support</h5>
 						<span className="font-medium">Help & Support</span>
 						<span className="font-medium">Trust & Safety</span>
@@ -47,7 +40,6 @@ const Footer = () => {
 					</div>
 
 					<div className="flex flex-col gap-5">
-						{/* Item */}
 						<h5 className="font-bold text-[#555]">Community</h5>
 						<span className="font-medium">Customer Success Stories</span>
 						<span className="font-medium">Community hub</span>
@@ -63,7 +55,6 @@ const Footer = () => {
 					</div>
 
 					<div className="flex flex-col gap-5">
-						{/* Item */}
 						<h5 className="font-bold text-[#555]">More from Workhive</h5>
 						<span className="font-medium">Liverr Business</span>
 						<span className="font-medium">Liverr Pro</span>
@@ -79,18 +70,14 @@ const Footer = () => {
 				</div>
 				<hr className="my-[50px] mx-[0px] border border-[grey]" />
 				<div className="flex items-center justify-between">
-					{/* Bottom */}
 					<div className="w-max flex items-center gap-5">
-						{/* Left */}
 						<h3 className="text-3xl font-bold text-[#555]">workhive</h3>
-						<span className="whitespace-nowrap">
+						<span className="whitespace-nowrap text-[#555]">
 							© Workhive International Ltd. 2023
 						</span>
 					</div>
 					<div className="w-max flex items-center gap-7">
-						{/* Right */}
 						<div className="flex gap-5">
-							{/* Socials */}
 							<img
 								src="twitter.png"
 								alt="twitter icon"
@@ -118,22 +105,20 @@ const Footer = () => {
 							/>
 						</div>
 						<div className="flex items-center gap-2">
-							{/* ICON and Text */}
 							<img
 								src="language.png"
 								alt="a language icon"
 								className="w-[24px] h-[24px]"
 							/>
-							<span className="font-medium">English</span>
+							<span className="font-medium text-[#555]">English</span>
 						</div>
 						<div className="flex items-center gap-2">
-							{/* Image */}
 							<img
 								src="coin.png"
 								alt="a coin icon"
 								className="w-[24px] h-[24px]"
 							/>
-							<span className="font-medium">USD</span>
+							<span className="font-medium text-[#555]">USD</span>
 						</div>
 						<img
 							src="accessibility.png"
