@@ -6,6 +6,8 @@ import TrustedBy from "@/components/TrustedBy";
 
 import DemoCarousel from "@/components/DemoCarousel";
 import FeatureTwo from "@/components/FeatureTwo";
+import FeatureThree from "@/components/FeatureThree";
+import FeatureFour from "@/components/FeatureFour";
 
 const App = () => {
 	return (
@@ -15,6 +17,8 @@ const App = () => {
 			<TrustedBy />
 			<DemoCarousel imagesToPass={1} imagesToShow={1} />
 			<FeatureTwo />
+			<FeatureThree />
+			<FeatureFour />
 		</>
 	);
 };

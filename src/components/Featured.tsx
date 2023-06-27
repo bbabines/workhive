@@ -2,11 +2,11 @@ import React from "react";
 
 const Featured = () => {
 	return (
-		<div className="h-[600px] flex justify-center bg-[lightgrey]">
+		<div className="h-[600px] flex justify-center bg-[#013916]">
 			{/* Featured */}
 			<div className="w-[1400px] flex items-center">
 				{/* Container */}
-				<div className="flex flex-col gap-[30px]">
+				<div className="flex flex-col gap-[30px] text-white">
 					{/* Left */}
 					<h1 className="text-[2rem]">
 						Find the perfect <i className="font-light">freelance</i> services
@@ -27,7 +27,7 @@ const Featured = () => {
 								className="outline-none border-none"
 							/>
 						</div>
-						<button className="w-[120px] h-[50px] cursor-pointer bg-[#bcf5a6] border-none">
+						<button className="w-[120px] h-[50px] cursor-pointer bg-[#1dbf73] border-none">
 							Search
 						</button>
 					</div>

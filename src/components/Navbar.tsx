@@ -30,19 +30,28 @@ const Navbar = () => {
 			// Will need to add another condition for pathname !== home so the screen is changed on different pages.
 			className={`${
 				active
-					? "flex flex-col items-center bg-[white] transition ease delay-150 sticky top-0 z-[999]"
-					: "flex flex-col items-center bg-[mediumpurple] transition ease delay-150 z-[999]"
+					? "flex flex-col items-center bg-[white] text-grey transition ease delay-150 sticky top-0 z-[999]"
+					: "flex flex-col items-center bg-[#013916] transition ease delay-150 z-[999]"
 			}`}
 		>
-			<div className="w-[1400px] flex justify-between py-[20px] px-[0]">
+			<div className="w-[1400px] flex justify-between py-[20px] px-[0] text-white">
 				<div className="text-3xl font-bold">
 					<Link href="/">
-						<span className="text">workhive</span>
-						<span className="text-[#bcf5a6]">.</span>
+						<span className={`${active ? "text-[grey]" : "text-white"}`}>
+							workhive
+						</span>
+						<span className="text-[#1dbf73]">.</span>
 					</Link>
 				</div>
 
-				<div className="flex gap-[24px] items-center font-medium font-mono">
+				<div
+					// className="flex gap-[24px] items-center font-medium font-mono text-[grey]"
+					className={`${
+						active
+							? "flex gap-[24px] items-center font-medium font-mono text-[grey]"
+							: "flex gap-[24px] items-center font-medium font-mono text-[white]"
+					}`}
+				>
 					<Link href="/">
 						<span>Workhive Business</span>
 					</Link>
@@ -117,15 +126,15 @@ const Navbar = () => {
 				<>
 					<hr className="w-[100%] h-[0px] border-1 border-slate-600" />
 					<div className="w-[1400px] py-[10px] px-[0px] flex justify-between font-light text-slate-600">
-						<span>Test 1</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
-						<span>Test 2</span>
+						<span>Graphics & Design</span>
+						<span>Digital Marketing</span>
+						<span>Writing & Translation</span>
+						<span>Video & Animation</span>
+						<span>Music & Audio</span>
+						<span>Programming & Tech</span>
+						<span>Photography</span>
+						<span>Business</span>
+						<span>AI Services</span>
 					</div>
 				</>
 			)}
