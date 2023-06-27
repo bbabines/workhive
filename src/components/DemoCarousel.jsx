@@ -32,23 +32,23 @@ const DemoCarousel = ({ imagesToShow, imagesToPass }) => {
 			<div className="w=[1400px]">
 				{/* Slide */}
 				<div className="flex justify-center gap-3">
-					<button
+					{/* <button
 						onClick={handlePrev}
 						className=" h-[35px] w-[75px] text-black bg-transparent border-2 border-[black] py-[5px] px-[10px] rounded-2xl text-sm relative top-[150px]"
 					>
 						Previous
-					</button>
+					</button> */}
 					{/* Container */}
 
 					{cards.map((card) => (
 						<CategoryCard item={card} key={card.id} />
 					))}
-					<button
+					{/* <button
 						onClick={handleNext}
 						className=" h-[35px] w-[75px] text-black bg-transparent border-2 border-[black] py-[5px] px-[10px] rounded-2xl text-sm relative top-[150px]"
 					>
 						Next
-					</button>
+					</button> */}
 				</div>
 			</div>
 		</div>

@@ -30,8 +30,8 @@ const Navbar = () => {
 			// Will need to add another condition for pathname !== home so the screen is changed on different pages.
 			className={`${
 				active
-					? "flex flex-col items-center bg-[white] transition ease delay-150 sticky top-0 "
-					: "flex flex-col items-center bg-[mediumpurple] transition ease delay-150 "
+					? "flex flex-col items-center bg-[white] transition ease delay-150 sticky top-0 z-[999]"
+					: "flex flex-col items-center bg-[mediumpurple] transition ease delay-150 z-[999]"
 			}`}
 		>
 			<div className="w-[1400px] flex justify-between py-[20px] px-[0]">
