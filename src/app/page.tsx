@@ -9,6 +9,7 @@ import DemoProjectCarousel from "../components/DemoProjectCarousel";
 import FeatureTwo from "@/components/FeatureTwo";
 import FeatureThree from "@/components/FeatureThree";
 import FeatureFour from "@/components/FeatureFour";
+import Footer from "@/components/Footer";
 
 const App = () => {
 	return (
@@ -21,6 +22,7 @@ const App = () => {
 			<FeatureThree />
 			<FeatureFour />
 			<DemoProjectCarousel imagesToPass={1} imagesToShow={1} />
+			<Footer />
 		</>
 	);
 };
