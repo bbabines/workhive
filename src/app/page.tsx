@@ -10,7 +10,6 @@ import FeatureTwo from "@/components/FeatureTwo";
 import FeatureThree from "@/components/FeatureThree";
 import FeatureFour from "@/components/FeatureFour";
 import Footer from "@/components/Footer";
-import GigCards from "@/components/GigCards";
 
 // import { gigs } from "@/data";
 
@@ -25,7 +24,6 @@ const App = () => {
 			<FeatureThree />
 			<FeatureFour />
 			<DemoProjectCarousel imagesToPass={1} imagesToShow={1} />
-			{/* <GigCards item={gigs} /> */}
 			<Footer />
 		</>
 	);

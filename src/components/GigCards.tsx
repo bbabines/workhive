@@ -8,7 +8,7 @@ type GigCardProps = {
 const GigCards = ({ item }: GigCardProps) => {
 	return (
 		// <Link href="/">
-		<div className="w-[324px] h-[400px] border border-[black] mb-[40px]">
+		<div className="w-[324px] h-[450px] border border-[#d4d2d2] mb-[40px]">
 			<img
 				src={item.img}
 				alt="a project picture"
@@ -40,11 +40,10 @@ const GigCards = ({ item }: GigCardProps) => {
 					alt="a heart icon"
 					className="w-[16px] h-[16px] cursor-pointer object-cover"
 				/>
-				<div className="text-[#555] text-sm">
+				<div className="text-[#555] text-sm p=[10px]">
 					<span className="text-[#555] text-sm">STARTING AT</span>
 					<h2 className="text-[#555] text-lg font-normal text-end">
 						$ {item.price}
-						<sup className="text-sm font-light">99</sup>
 					</h2>
 				</div>
 			</div>
