@@ -2,12 +2,12 @@
 
 import React, { useState } from "react";
 
-import CategoryCard from "./CategoryCard";
-import { cards } from "../data";
+import ProjectCard from "./ProjectCard";
+import { projects } from "@/data";
 
 // Need to find a better solution for a carousel
 
-const DemoCarousel = ({ imagesToShow, imagesToPass }) => {
+const DemoProjectCarousel = ({ imagesToShow, imagesToPass }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
 	const handleNext = () => {
@@ -40,8 +40,8 @@ const DemoCarousel = ({ imagesToShow, imagesToPass }) => {
 					</button> */}
 					{/* Container */}
 
-					{cards.map((card) => (
-						<CategoryCard item={card} key={card.id} />
+					{projects.map((project) => (
+						<ProjectCard item={project} key={project.id} />
 					))}
 					{/* <button
 						onClick={handleNext}
@@ -55,4 +55,4 @@ const DemoCarousel = ({ imagesToShow, imagesToPass }) => {
 	);
 };
 
-export default DemoCarousel;
+export default DemoProjectCarousel;

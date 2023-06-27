@@ -3,11 +3,8 @@ import React from "react";
 const FeatureTwo = () => {
 	return (
 		<div className="bg-[#f1fdf7] flex justify-center py-[100px] px-[0px]">
-			{/* Features */}
 			<div className="w-[1400px] flex items-center gap-[25px]">
-				{/* Container */}
 				<div className="flex flex-col gap-3">
-					{/* Item */}
 					<h2 className="text-[1.5rem] font-medium mb-[10px]">
 						A whole world of freelance talent at your fingertips
 					</h2>
@@ -50,7 +47,6 @@ const FeatureTwo = () => {
 				</div>
 
 				<div>
-					{/* Item */}
 					<video src="" controls className="w-[720px] "></video>
 				</div>
 			</div>

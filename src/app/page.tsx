@@ -5,6 +5,7 @@ import Featured from "@/components/Featured";
 import TrustedBy from "@/components/TrustedBy";
 
 import DemoCarousel from "@/components/DemoCarousel";
+import DemoProjectCarousel from "../components/DemoProjectCarousel";
 import FeatureTwo from "@/components/FeatureTwo";
 import FeatureThree from "@/components/FeatureThree";
 import FeatureFour from "@/components/FeatureFour";
@@ -19,6 +20,7 @@ const App = () => {
 			<FeatureTwo />
 			<FeatureThree />
 			<FeatureFour />
+			<DemoProjectCarousel imagesToPass={1} imagesToShow={1} />
 		</>
 	);
 };

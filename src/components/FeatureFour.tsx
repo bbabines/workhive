@@ -4,7 +4,7 @@ const FeatureFour = () => {
 	return (
 		<div className="bg-[#0d084d] text-[white] px-[50px] ">
 			<div className="flex  text-lg ">
-				<div className="w-[50%] flex flex-col justify-center items-start ml-[15em]">
+				<div className="w-[50%] flex flex-col justify-center items-start ml-[15em] mb-[150px]">
 					<h3 className="text-[2.5rem] pb-[30px] pt-[0px] font-semibold ">
 						workhive <i className="font-light">business</i>
 					</h3>
@@ -28,7 +28,7 @@ const FeatureFour = () => {
 						<img src="check.png" alt="a checkmark" />
 						Manage teamwork and boost productivity with one powerful workspace
 					</div>
-					<button className="bg-[#1dbf73] py-[10px] px-[20px] rounded-md cursor-pointer mb-[20px] mt-[20px]">
+					<button className="bg-[#1dbf73] py-[10px] px-[20px] rounded-md cursor-pointer mb-[20px] mt-[20px] hover:bg-[#179b5e]">
 						Explore Workhive Business
 					</button>
 				</div>
@@ -45,5 +45,3 @@ const FeatureFour = () => {
 };
 
 export default FeatureFour;
-
-// flex flex-col
