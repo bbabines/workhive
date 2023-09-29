@@ -30,11 +30,11 @@ const Navbar = () => {
 			// Will need to add another condition for pathname !== home so the screen is changed on different pages.
 			className={`${
 				active
-					? "flex flex-col items-center bg-[white] text-grey transition ease delay-150 sticky top-0 z-[999"
-					: "flex flex-col items-center bg-[#013916] transition ease delay-150 z-[999] order"
+					? "flex flex-col items-center bg-[white] text-grey transition ease delay-150 sticky top-0 z-[999]"
+					: "flex flex-col items-center bg-[#013916] transition ease delay-150 z-[999] order "
 			}`}
 		>
-			<div className="w-[100%] px-4 flex justify-between py-[20px] text-white">
+			<div className="max-w-[1440px] w-[100%] px-4 flex justify-between py-[20px] text-white">
 				<div className="text-3xl font-bold">
 					<Link href="/">
 						<span className={`${active ? "text-[grey]" : "text-white"}`}>

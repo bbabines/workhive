@@ -1,6 +1,6 @@
 const FeatureTwo = () => {
 	return (
-		<div className="bg-[#f1fdf7] flex justify-center py-[100px] px-[0px] max-xl:py-0">
+		<div className="bg-[#f1fdf7] flex justify-center py-[100px] max-xl:py-0 px-4">
 			<div className="w-[1400px] flex items-center gap-[25px] max-xl:flex-wrap  max-xl:flex-col max-xl:px-4">
 				<div className="flex flex-col gap-3">
 					<h2 className="text-[1.5rem] font-medium mb-[10px]">

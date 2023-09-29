@@ -20,7 +20,7 @@ const Gigs = () => {
 			<Navbar />
 
 			<div className="flex justify-center">
-				<div className="w-[1400px] py-[30px] px-[0px] gap-4 flex flex-col ">
+				<div className="w-[1400px] py-[30px] px-[0px] gap-4 flex flex-col mx-[2em] max-md:items-center">
 					<span className="font-sm uppercase text-sm text-[#555]  ">
 						WORKHIVE &gt; GRAPHICS & DESIGN &gt;
 					</span>
@@ -29,7 +29,7 @@ const Gigs = () => {
 						Explore the boundaries of art and technology with Workhive's AI
 						artists
 					</p>
-					<div className="flex justify-between items-center gap-5 border pt-4">
+					<div className="flex justify-between items-center gap-5 pt-4  max-md:flex-wrap">
 						{/* Menu */}
 						<div className="flex items-center gap-3 text-[#555] font-light">
 							{/* LEFT */}
@@ -86,7 +86,7 @@ const Gigs = () => {
 							/>
 						</div>
 					</div>
-					<div className="flex flex-wrap justify-between">
+					<div className="flex flex-wrap justify-between max-md:justify-center">
 						{gigs.map((gig) => (
 							<GigCards item={gig} key={gig.id} />
 						))}
