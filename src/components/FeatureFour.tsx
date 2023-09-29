@@ -1,5 +1,3 @@
-import React from "react";
-
 const FeatureFour = () => {
 	return (
 		<div className="bg-[#0d084d] text-[white] px-[50px]">

@@ -1,5 +1,3 @@
-import React from "react";
-
 const TrustedBy = () => {
 	return (
 		<div className="w-[100%] flex content-center justify-center bg-[white">
