@@ -30,11 +30,11 @@ const Navbar = () => {
 			// Will need to add another condition for pathname !== home so the screen is changed on different pages.
 			className={`${
 				active
-					? "flex flex-col items-center bg-[white] text-grey transition ease delay-150 sticky top-0 z-[999]"
-					: "flex flex-col items-center bg-[#013916] transition ease delay-150 z-[999]"
+					? "flex flex-col items-center bg-[white] text-grey transition ease delay-150 sticky top-0 z-[999"
+					: "flex flex-col items-center bg-[#013916] transition ease delay-150 z-[999] order"
 			}`}
 		>
-			<div className="w-[1400px] flex justify-between py-[20px] px-[0] text-white">
+			<div className="w-[100%] px-4 flex justify-between py-[20px] text-white">
 				<div className="text-3xl font-bold">
 					<Link href="/">
 						<span className={`${active ? "text-[grey]" : "text-white"}`}>
@@ -45,11 +45,10 @@ const Navbar = () => {
 				</div>
 
 				<div
-					// className="flex gap-[24px] items-center font-medium font-mono text-[grey]"
 					className={`${
 						active
-							? "flex gap-[24px] items-center font-medium font-mono text-[grey]"
-							: "flex gap-[24px] items-center font-medium font-mono text-[white]"
+							? "flex gap-[24px] items-center font-medium font-mono text-[grey] max-md:flex-wrap max-md:justify-center max-md:ml-2 max-md:mb-4"
+							: "flex gap-[24px] items-center font-medium font-mono text-[white] max-md:flex-wrap max-md:justify-center max-md:ml-2 max-md:mb-4"
 					}`}
 				>
 					<Link href="/">
@@ -91,7 +90,7 @@ const Navbar = () => {
 								{currentUser?.username}
 							</span>
 							{open && (
-								<div className="w-[200px] flex flex-col gap-[7px] absolute top-[50px] right-[0px] text-[grey] bg-[white] border-2 border-[lightgrey] rounded-lg p-[20px] font-medium">
+								<div className="w-[200px] flex flex-col gap-[7px] absolute top-[50px] right-[0px] text-[grey] bg-[white] border-2 border-[lightgrey] rounded-lg p-[20px] font-medium ">
 									{/* Options */}
 									{currentUser?.isSeller && (
 										<>
@@ -125,7 +124,7 @@ const Navbar = () => {
 			{active && (
 				<>
 					<hr className="w-[100%] h-[0px] border-1 border-slate-600" />
-					<div className="w-[1400px] py-[10px] px-[0px] flex justify-between font-light text-slate-600">
+					<div className="w-[100%] py-[10px] px-[20px] flex justify-between font-light text-slate-600 max-xl:flex-wrap max-xl:justify-center max-xl:items-center max-xl:gap-4 ">
 						<span>Graphics & Design</span>
 						<span>Digital Marketing</span>
 						<span>Writing & Translation</span>

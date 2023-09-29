@@ -2,9 +2,9 @@ import React from "react";
 
 const TrustedBy = () => {
 	return (
-		<div className="flex content-center justify-center  bg-[white] ">
+		<div className="w-[100%] flex content-center justify-center bg-[white">
 			{/* <p>TrustedBy</p> */}
-			<div className="flex  items-center gap-5 font-bold text-[grey]">
+			<div className="flex items-center gap-5 font-bold text-[grey] max-lg:flex-wrap max-lg:justify-center">
 				<span>Trusted By:</span>
 				<img
 					src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/facebook2x.188a797.png"

@@ -4,7 +4,7 @@ const Featured = () => {
 	return (
 		<div className="h-[600px] flex justify-center bg-[#013916]">
 			{/* Featured */}
-			<div className="w-[1400px] flex items-center">
+			<div className="w-[1400px] flex items-center max-2xl:mx-4 max-sm:flex-wrap max-sm:justify-center">
 				{/* Container */}
 				<div className="flex flex-col gap-[30px] text-white">
 					{/* Left */}
@@ -53,7 +53,7 @@ const Featured = () => {
 					<img
 						src="man.png"
 						alt="an image of a man"
-						className="h-[100%] object-contain"
+						className="h-[100%] object-contain max-sm:h-[50%] max-sm:"
 					/>
 				</div>
 			</div>

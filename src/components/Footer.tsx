@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<div className="flex justify-center text-[#7476a7] my-[50px] mx-[0px]">
 			<div className="flex flex-col text-center max-lg:w-[80%] max-lg:items-center">
-				<div className="w-[1440px] flex justify-between flex-wrap max-xl:w-[1000px] max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-4">
+				<div className="w-[1440px] flex justify-between flex-wrap max-xl:w-[1000px] max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-4 max-2xl:w-[900px]">
 					<div className="flex flex-col gap-5">
 						<h5 className="font-bold text-[#555]">Categories</h5>
 						<span className="font-medium">Graphics & Design</span>
