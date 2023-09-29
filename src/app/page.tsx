@@ -19,11 +19,11 @@ const App = () => {
 			<Navbar />
 			<Featured />
 			<TrustedBy />
-			<DemoCarousel imagesToPass={1} imagesToShow={1} />
+			{/* <DemoCarousel imagesToPass={1} imagesToShow={1} /> */}
 			<FeatureTwo />
 			<FeatureThree />
 			<FeatureFour />
-			<DemoProjectCarousel imagesToPass={1} imagesToShow={1} />
+			{/* <DemoProjectCarousel imagesToPass={1} imagesToShow={1} /> */}
 			<Footer />
 		</>
 	);
