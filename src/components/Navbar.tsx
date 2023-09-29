@@ -94,20 +94,20 @@ const Navbar = () => {
 									{/* Options */}
 									{currentUser?.isSeller && (
 										<>
-											<Link href="/">
+											<Link href="/myGigs">
 												<span>Gigs</span>
 											</Link>
 
-											<Link href="/">
+											<Link href="/gigs">
 												<span>Add New Gig</span>
 											</Link>
 										</>
 									)}
-									<Link href="/">
+									<Link href="/orders">
 										<span>Orders</span>
 									</Link>
 
-									<Link href="/">
+									<Link href="/messages">
 										<span>Messages</span>
 									</Link>
 
