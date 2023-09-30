@@ -6,7 +6,7 @@ type ProjectCardProp = {
 
 const ProjectCard = ({ item }: ProjectCardProp) => {
 	return (
-		<div className="w-[300px] h-[300px] rounded-md overflow-hidden cursor-pointer border border-[black]">
+		<div className="w-[300px] h-[300px] mt-8 rounded-md overflow-hidden cursor-pointer border border-[black]">
 			<img
 				src={item.img}
 				alt="a project picture"
