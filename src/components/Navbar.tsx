@@ -98,7 +98,7 @@ const Navbar = () => {
 												<span>Gigs</span>
 											</Link>
 
-											<Link href="/gigs">
+											<Link href="/add">
 												<span>Add New Gig</span>
 											</Link>
 										</>
